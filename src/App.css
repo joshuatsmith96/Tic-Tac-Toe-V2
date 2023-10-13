@@ -3,54 +3,44 @@
   margin: 0px;
 }
 
-.Board{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: center;
-  width: 100%;
-}
-
-.board-box{
-  height: 80px;
-  width: 80px;
+.center{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.box-1{
-  border-bottom: solid;
-  border-right: solid;
+.PlayerCard{
+  width: 80%;
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: rgb(184, 184, 184);
 }
 
-.box-2{
-  border-bottom: solid;
+.EditButton{
+  padding: 5px;
+  height: 20px;
+  width: 20px;
+  background-image: url("./assets/edit-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 1px;
 }
 
-.box-3{
-  border-bottom: solid;
-  border-left: solid;
+.modalBody label{
+  margin-right: 20px;
 }
 
-.box-4{
-  border-right: solid;
-  border-bottom: solid;
-}
-
-.box-5{
-  border-bottom: solid;
-}
-
-.box-6{
-  border-left: solid;
-  border-bottom: solid;
-}
-
-.box-7{
-  border-right: solid;
-}
-
-.box-9{
-  border-left: solid;
+.board-piece-selection{
+  height: 50px;
+  length: 50px;
 }
