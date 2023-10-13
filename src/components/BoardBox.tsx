@@ -1,3 +1,5 @@
+import Functionality from "./Functionality";
+
 function BoardBox() {
   //This 'index' number keeps track of where on the board is clicked.
   let index = 1;
@@ -5,11 +7,8 @@ function BoardBox() {
   //Function that runs when a tic tac toe box is clicked
   const boxClicked = (e: any) => {
     index = e.target.id;
-    //Get whole board
-    console.log(index)
-    let Board = document.querySelector(".Board");
-    let pieceHolder = Board?.children[index-1].children[0]
-    pieceHolder!.innerHTML = "X"
+    //--------------- GAME FUNCTIONALITY -------------
+    Functionality(index)
   };
 
   //This creates each individual clickable box on the board
