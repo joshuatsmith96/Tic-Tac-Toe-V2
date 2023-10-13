@@ -17,7 +17,7 @@
 
 .box-1{
   border-bottom: solid;
-
+  border-right: solid;
 }
 
 .box-2{
@@ -45,10 +45,6 @@
 
 .box-7{
   border-right: solid;
-}
-
-.box-8{
-
 }
 
 .box-9{
