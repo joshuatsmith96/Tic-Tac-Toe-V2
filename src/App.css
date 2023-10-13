@@ -1,0 +1,56 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+.Board{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  width: 100%;
+}
+
+.board-box{
+  height: 80px;
+  width: 80px;
+}
+
+.box-1{
+  border-bottom: solid;
+
+}
+
+.box-2{
+  border-bottom: solid;
+}
+
+.box-3{
+  border-bottom: solid;
+  border-left: solid;
+}
+
+.box-4{
+  border-right: solid;
+  border-bottom: solid;
+}
+
+.box-5{
+  border-bottom: solid;
+}
+
+.box-6{
+  border-left: solid;
+  border-bottom: solid;
+}
+
+.box-7{
+  border-right: solid;
+}
+
+.box-8{
+
+}
+
+.box-9{
+  border-left: solid;
+}
