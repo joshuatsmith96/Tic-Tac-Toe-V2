@@ -1,14 +1,30 @@
 import Functionality from "./Functionality";
 
-function BoardBox() {
-  //This 'index' number keeps track of where on the board is clicked.
-  let index = 1;
+interface Props{
+  callback2: Function
+}
+
+function BoardBox(props: Props) {
+
+  //Recieved From Child
+  let CurrentPlayer:String;
+  let callback = (value:String) => {
+    CurrentPlayer = value;
+    sendToParent(CurrentPlayer)
+  }
+
+    //SENDING TO PARENT
+    const sendToParent =(msg:String) =>{
+      props.callback2(msg)
+      
+    }
 
   //Function that runs when a tic tac toe box is clicked
+  let index;
   const boxClicked = (e: any) => {
-    index = e.target.id;
+    index = e.target.id
     //--------------- GAME FUNCTIONALITY -------------
-    Functionality(index)
+    Functionality(index, callback)
   };
 
   //This creates each individual clickable box on the board
@@ -18,10 +34,10 @@ function BoardBox() {
     return (
       <div
         key={box}
-        id={box.toString()}
         className={classname}
         onClick={boxClicked}
-      ><span className="piece-placeholder"></span></div>
+      ><span id={'B' + box.toString()} className="piece-placeholder"></span>
+      </div>
     );
   });
 
