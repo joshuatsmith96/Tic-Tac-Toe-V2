@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route index element={<Start />} />
+          <Route path="/Tic-Tac-Toe-V2" element={<Start />} />
           <Route path="/game" element={<Game />} />
         </Routes>
       </BrowserRouter>

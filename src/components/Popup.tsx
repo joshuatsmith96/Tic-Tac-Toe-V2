@@ -5,7 +5,7 @@ function Popup(){
         <div id="Popup">
             <h1 id="popup-h1">This person won!</h1>
             <button onClick={() => {window.location.reload();}}>New Game</button>
-            <Link to="/" className="menu_button">Main Menu</Link>
+            <Link to="/Tic-Tac-Toe-V2" className="menu_button">Main Menu</Link>
         </div>
     )
 }
