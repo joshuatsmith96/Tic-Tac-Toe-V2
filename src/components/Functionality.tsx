@@ -65,7 +65,7 @@ function Functionality(index: any, callback: Function) {
         isSelected3 = document.getElementsByClassName(box)[0].children[0].classList.contains("selected")
       }
       if (fString1 === fString2 && fString1 === fString3 && fString2 === fString3 && isSelected1 === true && isSelected2 === true && isSelected3 === true) { // && isSelected1 === true && isSelected2 === true && isSelected3 === true
-        TicTacToe(n1, n2, n3)
+        TicTacToe()
       }
     }
 
@@ -83,8 +83,7 @@ function Functionality(index: any, callback: Function) {
       
   }
 
-  function TicTacToe(n1:Number, n2:Number, n3:Number){
-    let options = [n1, n2, n3]
+  function TicTacToe(){
     Popup("");
   }
 
