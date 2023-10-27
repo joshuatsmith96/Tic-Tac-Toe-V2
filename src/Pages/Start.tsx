@@ -29,7 +29,7 @@ function Start() {
       <PlayerCard player="1" pId="P1"/>
       <PlayerCard player="2" pId="P2"/>
       </div>
-      <Link className="start-button" to="/Game">Start Game</Link>
+      <Link className="start-button" to="/Tic-Tac-Toe-V2/Game">Start Game</Link>
     </div>
   );
 }
