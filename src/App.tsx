@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/Tic-Tac-Toe" element={<Start />} />
-          <Route path="/Tic-Tac-Toe/Game" element={<Game />} />
+          <Route path="/Tic-Tac-Toe-V2" element={<Start />} />
+          <Route path="/Tic-Tac-Toe-V2/Game" element={<Game />} />
         </Routes>
       </BrowserRouter>
     </div>
